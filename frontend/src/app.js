@@ -1,4 +1,4 @@
-import "regenerator-runtime/runtime"; // if needed for async/await in older browsers
+// import "regenerator-runtime/runtime"; // if needed for async/await in older browsers
 
 const chatContainer = document.getElementById("chat-container");
 const messageForm = document.getElementById("message-form");

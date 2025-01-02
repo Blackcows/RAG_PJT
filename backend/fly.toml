@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for ssafy-2024-backend-weathered-dew-9917 on 2025-01-02T13:38:02+09:00
+# fly.toml app configuration file generated for ssafy-2024-backend-purple-frost-3496 on 2025-01-02T20:38:31+09:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'ssafy-2024-backend-weathered-dew-9917'
+app = 'ssafy-2024-backend-purple-frost-3496'
 primary_region = 'nrt'
 
 [build]
@@ -15,7 +15,7 @@ primary_region = 'nrt'
 [http_service]
   internal_port = 8000
   force_https = true
-  auto_stop_machines = true
+  auto_stop_machines = 'stop'
   auto_start_machines = true
   min_machines_running = 0
   processes = ['app']

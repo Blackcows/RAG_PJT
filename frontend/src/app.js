@@ -136,7 +136,11 @@ async function getChatResponse(userMessage) {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
+      // CORS 관련 헤더 추가
+      'Accept': 'application/json',
+      'Access-Control-Allow-Origin': '*'
     },
+    credentials: 'include',  // 필요한 경우 쿠키 포함
     body: JSON.stringify(payload), // JSON 형식으로 전송
   });
 
